@@ -1,47 +1,23 @@
-import React from "react";
+import React from 'react';
+import iconArray from '../../utils/constants';
 
-function Skills(){
-  return(
-    <section class="skills">
-    <div class="skills__content">
-      <h2 class="skills__title section__title">Skills</h2>
+function Skills() {
+  return (
+    <section class="bg-[#DCE1E3] min-h-min p-10">
+      <div class="mx-auto max-w-4xl">
+        <h2>Skills</h2>
 
-      <ul class="skills__icons">
-        <li class="skills__outline">
-          <img src="./images/react.png" alt="" class="skills__icon" />
-        </li>
-        <li class="skills__outline">
-          <img src="./images/mongo.png" alt="" class="skills__icon" />
-        </li>
-        <li class="skills__outline">
-          <img src="./images/node.png" alt="" class="skills__icon" />
-        </li>
-        <li class="skills__outline">
-          <img src="./images/expressjs-icon.png" alt="" class="skills__icon"/>
-        </li>
-        <li class="skills__outline">
-          <img src="./images/js.png" alt="" class="skills__icon" />
-        </li>
-      <li class="skills__outline">
-        <img src="./images/html5.png" alt="" class="skills__icon" />
-      </li>
-        <li class="skills__outline">
-          <img src="./images/css3.png" alt="" class="skills__icon" />
-        </li>
-        <li class="skills__outline">
-          <img src="./images/git.png" alt="" class="skills__icon" />
-        </li>
-        <li class="skills__outline">
-          <img src="./images/figma.png" alt="" class="skills__icon" />
-        </li>
-        <li class="skills__outline">
-          <img src="./images/ps.png" alt="" class="skills__icon" />
-          </li>
-      </ul>
-    </div>
-
-  </section>
-  )
+        <ul class="w-[80%] mx-auto py-12 flex flex-wrap items-center justify-center gap-10">
+          {iconArray.map(({name, icon}) => {
+            // Create hover state and tooltips for icons
+            return <li class="rounded-full min-h-[100px] w-[100px] flex justify-center items-center bg-[white] shadow-lg" key={`${name}key`}>
+              <img src={icon} alt={name} class="max-h-16 " />
+            </li>
+          })}
+        </ul>
+      </div>
+    </section>
+  );
 }
 
 export default Skills;

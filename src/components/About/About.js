@@ -15,7 +15,7 @@ function About() {
             <p class="text-paragraph text-lg mb-3">{paragraph}</p>
           ))}
         </div>
-            <img class="max-h-96 rounded-full" src={profile} alt="Author profile" />
+            <img class="max-h-96 rounded-t-full drop-shadow-2xl" src={profile} alt="Author profile" />
       </div>
 
       <button class="about__contact">Let's Connect</button>
