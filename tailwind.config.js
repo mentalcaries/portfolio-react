@@ -7,6 +7,7 @@ module.exports = {
       backgroundImage: {
 
         'hero-image':"url('./images/hero-background.png')",
+        'project-peaks': "url('./images/peaks.svg')",
       }
     },
     colors:{
