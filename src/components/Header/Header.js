@@ -1,16 +1,13 @@
 import React from 'react';
+import './Header.css';
 import profileLogo from '../../images/dj-logo.png';
 
 function Header() {
   return (
-    <header class="flex justify-between max-w-screen-x mt-6 px-10">
-      <img
-        src={profileLogo}
-        alt="DJ Profile"
-        className="max-w-[300px] w-full"
-      />
-      <nav class="flex">
-        <ul class="flex justify-around max-w-lg">
+    <header class="header">
+      <img src={profileLogo} alt="DJ Profile" className="header__logo" />
+      <nav>
+        <ul class="header__items">
           {[
             ['About', '#about'],
             ['Projects', '#projects'],
@@ -18,10 +15,7 @@ function Header() {
             ['Contact', '#contact'],
           ].map(([title, url]) => (
             <li class="">
-              <a
-                href={url}
-                class="font-sans text-m uppercase font-semibold tracking-wider ml-5 hover:opacity-60 ease-linear duration-300 "
-              >
+              <a href={url} class="header__item">
                 {title}
               </a>
             </li>

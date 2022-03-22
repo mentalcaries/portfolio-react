@@ -1,0 +1,26 @@
+.main{
+  background-image: url('../../images/hero-background.png');
+  background-position: center;
+  min-height: 640px;
+  width: 100%;
+  margin-top: -48px;
+  display: flex;
+  align-items: center;
+}
+
+.main__content{
+  max-width: 768px;
+  margin: 120px
+}
+
+.main__title{
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 12px;
+}
+.main__subtitle{
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 1.75rem;
+}

@@ -6,7 +6,6 @@ function ProjectCard() {
     // Project image
     // Overlay
     // Text
-    // Icons showing Tech
     // Links to code and deployment
     <article className="shadow-lg rounded-lg p-5">
       <a

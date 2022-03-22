@@ -1,0 +1,41 @@
+.about{
+  max-width: 880px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.about__content{
+ display: flex;
+ justify-content: space-between;
+}
+
+.about__text{
+  max-width: 512px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title{
+  font-family: Quicksand, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.about__paragraph{
+  color:#004E7C;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 12px;
+}
+
+.about__button{
+  background-color: #004E7C;
+  color: white;
+  max-width: 180px;
+  min-height: 48px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin: 24px auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
