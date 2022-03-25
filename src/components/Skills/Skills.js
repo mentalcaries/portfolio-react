@@ -1,17 +1,18 @@
 import React from 'react';
+import './Skills.css'
 import iconArray from '../../utils/constants';
 
 function Skills() {
   return (
-    <section class="bg-[#DCE1E3] min-h-min p-10">
-      <div class="mx-auto max-w-4xl">
-        <h2 class="max-w-3xl mx-auto">Skills</h2>
+    <section class="skills">
+      <div class="skills__content">
+        <h2 class="skills__title">Skills</h2>
 
-        <ul class="w-[80%] mx-auto py-12 flex flex-wrap items-center justify-center gap-8">
+        <ul class="skills__icons">
           {iconArray.map(({name, icon}) => {
             // Create hover state and tooltips for icons
-            return <li class="rounded-full min-h-[100px] w-[100px] flex justify-center items-center bg-[white] shadow-lg" key={`${name}key`}>
-              <img src={icon} alt={name} class="max-h-14 w-auto" />
+            return <li class="skills__icon" key={`${name}key`}>
+              <img src={icon} alt={name} class="skills__icon-image" />
             </li>
           })}
         </ul>
