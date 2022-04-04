@@ -1,0 +1,34 @@
+.project-card{
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project__image{
+  max-height: 320px;
+  width:auto;
+  border-radius: 12px;
+  object-fit: contain;
+  transition:  transform linear 0.25s
+}
+
+.project__image:hover{
+  transform: scale(1.02);
+}
+
+.project__title{
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  text-align: center;
+}
+
+.project__desc{
+  text-align: center;
+}
+
+.project__tech{
+  text-align: center;
+  margin: 16px 0px
+}

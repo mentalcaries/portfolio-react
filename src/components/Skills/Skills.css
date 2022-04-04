@@ -40,5 +40,6 @@ gap: 32px;
 
 .skills__icon-image{
   max-height: 56px;
+  max-width: 56px;
   width: auto;
 }
