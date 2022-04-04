@@ -2,6 +2,7 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 
 .project__image{
@@ -9,7 +10,9 @@
   width:auto;
   border-radius: 12px;
   object-fit: contain;
-  transition:  transform linear 0.25s
+  margin: 0 auto;
+  transition:  transform linear 0.25s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project__image:hover{
@@ -31,4 +34,13 @@
 .project__tech{
   text-align: center;
   margin: 16px 0px
+}
+
+.project__links{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
 }

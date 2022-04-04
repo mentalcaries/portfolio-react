@@ -1,8 +1,8 @@
 import React from 'react';
 import './ProjectCard.css';
-import cardImage from '../../images/around.png';
 
-function ProjectCard() {
+function ProjectCard({card}) {
+  const {url, image, title, desc, frontend, backend, tech} = card;
   return (
     // Project image
     // Overlay
@@ -18,20 +18,35 @@ function ProjectCard() {
           className="
         "
         >
-          <img src={cardImage} alt="Project Card" className="project__image" />
-          <h3 className="project__title">
-            Around the U.S
-          </h3>
+          <img src={image} alt="Project Card" className="project__image" />
+          <h3 className="project__title">{title}</h3>
+          <ul className="project__links">
+            {frontend && (
+              <li>
+                <a href={frontend} target="_blank" rel="noreferrer">
+                  Frontend
+                </a>
+              </li>
+            )}
+            {backend && (
+              <li>
+                <a href={backend} target="_blank" rel="noreferrer">
+                  Backend
+                </a>
+              </li>
+            )}
+            <li>
+              <a href={url} target="_blank" rel="noreferrer">
+                Deployment
+              </a>
+            </li>
+          </ul>
           <p className="project__desc">
-            A full stack photo gallery app that allows users add, delete or like
-            photos. Registration and authentication handled on the back end with
-            photos and users saved to a Mongo database
+            {desc}
           </p>
         </div>
       </a>
-      <p className="project__tech">
-        React | Node | MongoDB | Google Cloud
-      </p>
+      <p className="project__tech">{tech}</p>
     </article>
   );
 }

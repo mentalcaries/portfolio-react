@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css'
-import iconArray from '../../utils/constants';
+import { iconArray } from '../../utils/constants';
 
 function Skills() {
   return (

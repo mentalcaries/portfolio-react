@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import { projectCards } from '../../utils/constants';
 
 function Projects() {
   return (
@@ -8,10 +9,9 @@ function Projects() {
       <div class="projects__content">
         <h2>Projects</h2>
         <div class="project-gallery">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          { projectCards.map(card => {
+            return <ProjectCard card={card} key={card.key}/>
+          })}
         </div>
       </div>
     </section>
