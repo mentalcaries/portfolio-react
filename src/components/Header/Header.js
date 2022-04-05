@@ -11,7 +11,7 @@ function Header() {
           {[
             ['About', '#about'],
             ['Projects', '#projects'],
-            ['Experience', '#experience'],
+            // ['Experience', '#experience'],
             ['Contact', '#contact'],
           ].map(([title, url]) => (
             <li key={title}>
