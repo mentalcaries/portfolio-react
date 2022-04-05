@@ -10,15 +10,16 @@ function ProjectCard({card}) {
     // Links to code and deployment
     <article className="project-card">
       <a
-        href="https://mentalcaries.students.nomoreparties.site"
+        href={url}
         target="_blank"
         rel="noreferrer"
       >
-        <div
+        {/* <div
           className="
         "
-        >
+        > */}
           <img src={image} alt="Project Card" className="project__image" />
+          </a>
           <h3 className="project__title">{title}</h3>
           <ul className="project__links">
             {frontend && (
@@ -44,8 +45,8 @@ function ProjectCard({card}) {
           <p className="project__desc">
             {desc}
           </p>
-        </div>
-      </a>
+        {/* </div> */}
+      
       <p className="project__tech">{tech}</p>
     </article>
   );

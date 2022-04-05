@@ -5,10 +5,10 @@ import { projectCards } from '../../utils/constants';
 
 function Projects() {
   return (
-    <section class="projects">
-      <div class="projects__content">
-        <h2>Projects</h2>
-        <div class="project-gallery">
+    <section className="projects" id="projects">
+      <div className="projects__content">
+        <h2 className='projects__title'>Projects</h2>
+        <div className="project-gallery">
           { projectCards.map(card => {
             return <ProjectCard card={card} key={card.key}/>
           })}

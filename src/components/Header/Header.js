@@ -4,18 +4,18 @@ import profileLogo from '../../images/dj-logo.png';
 
 function Header() {
   return (
-    <header class="header">
+    <header className="header">
       <img src={profileLogo} alt="DJ Profile" className="header__logo" />
       <nav>
-        <ul class="header__items">
+        <ul className="header__items">
           {[
             ['About', '#about'],
             ['Projects', '#projects'],
             ['Experience', '#experience'],
             ['Contact', '#contact'],
           ].map(([title, url]) => (
-            <li class="">
-              <a href={url} class="header__item">
+            <li key={title}>
+              <a href={url} className="header__item">
                 {title}
               </a>
             </li>

@@ -4,15 +4,15 @@ import { iconArray } from '../../utils/constants';
 
 function Skills() {
   return (
-    <section class="skills">
-      <div class="skills__content">
-        <h2 class="skills__title">Skills</h2>
+    <section className="skills">
+      <div className="skills__content">
+        <h2 className="skills__title">Skills</h2>
 
-        <ul class="skills__icons">
+        <ul className="skills__icons">
           {iconArray.map(({name, icon}) => {
             // Create hover state and tooltips for icons
-            return <li class="skills__icon" key={`${name}key`}>
-              <img src={icon} alt={name} class="skills__icon-image" />
+            return <li className="skills__icon" key={`${name}key`}>
+              <img src={icon} alt={name} className="skills__icon-image" />
             </li>
           })}
         </ul>

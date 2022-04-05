@@ -6,15 +6,17 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
+import Contact from '../Contact/Contact';
 
 function App() {
   return (
-    <div class="app">
+    <div className="app">
       <Header />
       <Main />
       <About />
       <Skills />
       <Projects />
+      <Contact/>
       <Footer />
     </div>
   );

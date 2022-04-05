@@ -12,6 +12,9 @@ import newsxp from '../images/newsxp.png';
 import around from '../images/around.png';
 import dotcot from '../images/dotcot.png';
 import elise from '../images/elise.png';
+import email from '../images/email.png';
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.png';
 
 const iconArray = [
   {name: 'Javascript', icon: javascript},
@@ -32,10 +35,10 @@ const projectCards = [
     url: 'https://newsxp.students.nomoreparties.sbs/',
     image: newsxp,
     title: 'News Explorer',
-    desc: `A single page application that allows users to search for news articles by keyword. It also features registration and login, which facilitates saving of articles, plus authentication and session management using JWT's.`,
+    desc: `A single page application that allows users to search for news articles by keyword. It also features user registration and login.`,
     tech: 'React | Node | MongoDB | Google Cloud',
     frontend: 'https://github.com/mentalcaries/news-explorer-frontend',
-    backend: 'https://github.com/mentalcaries/news-explorer-backend'
+    backend: 'https://github.com/mentalcaries/news-explorer-backend',
   },
   {
     key: 101,
@@ -43,30 +46,48 @@ const projectCards = [
     image: around,
     title: 'Around the US',
     desc: `A full stack photo gallery app that allows users add, delete or like
-  photos . Registration and authentication handled on the back end with
-  photos and users being saved to a Mongo database`,
+  photos, with user registration and login`,
     tech: 'React | Node | MongoDB | Google Cloud',
-    frontend: 'https://github.com/mentalcaries/react-around-api-full/tree/main/frontend',
-    backend: 'https://github.com/mentalcaries/react-around-api-full/tree/main/backend'
+    frontend:
+      'https://github.com/mentalcaries/react-around-api-full/tree/main/frontend',
+    backend:
+      'https://github.com/mentalcaries/react-around-api-full/tree/main/backend',
   },
   {
     key: 102,
     url: 'https://peaceful-woodland-39661.herokuapp.com/',
     image: dotcot,
     title: 'DotCot',
-    desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch, and later have the option of filtering startups based on desired parameters`,
+    desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
     tech: 'React | Node | MongoDB | Heroku',
-    
   },
   {
     key: 103,
-    url: 'https://mentalcaries.students.nomoreparties.site',
+    url: 'https://mentalcaries.github.io/code-jam-july-landing/index.html',
     image: elise,
     title: 'Portfolio Page - Elise',
-    desc: `This project presents a clean and modern landing page coded in pure HTML and CSS, and features responsive behaviour down to mobile sizes. Created for Practicum's code Jam in July 2021, this was codedsubmitted in 24 hours`,
+    desc: `This project presents a clean and modern landing page coded in pure HTML and CSS, and features responsive behaviour down to mobile sizes.`,
     tech: 'HTML | CSS',
     frontend: 'https://github.com/mentalcaries/code-jam-july-landing',
   },
 ];
 
-export { iconArray, projectCards };
+const contacts = [
+  {
+    name: 'Email',
+    url: 'mailto:devjaggernauth@gmail.com',
+    icon: email,
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://linkedin.com/in/devin-jaggernauth',
+    icon: linkedin,
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/mentalcaries',
+    icon: github,
+  },
+];
+
+export {iconArray, projectCards, contacts};

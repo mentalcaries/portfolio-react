@@ -8,10 +8,16 @@
   margin: 0 auto 32px;
 }
 
+.projects__title{
+  font-family: Quicksand, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
 .project-gallery {
   max-width: 100%;
-  margin: 0 auto;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
