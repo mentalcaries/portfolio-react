@@ -9,7 +9,9 @@
 .header__logo {
   max-width: 300px;
   width: 100%;
+  padding-right: 24px;
 }
+
 
 .header__items {
   display: flex;
@@ -27,4 +29,11 @@
 
 .header__item:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 880px) {
+  .header__nav{
+    display: none;
+  }
+  
 }

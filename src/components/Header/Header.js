@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header">
       <img src={profileLogo} alt="DJ Profile" className="header__logo" />
-      <nav>
+      <nav className='header__nav'>
         <ul className="header__items">
           {[
             ['About', '#about'],
