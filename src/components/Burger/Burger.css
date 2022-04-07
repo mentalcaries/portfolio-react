@@ -18,12 +18,18 @@
   max-width: 120px;
   border-radius: 12px;
   display: none;
-  transition: opacity 0.25s ease in;
   opacity: 0;
+  transition: all 0.5s linear;
+  visibility: hidden;
 }
 
 .burger__item{
   padding-bottom: 4px;
+  transition: linear 0.3s
+}
+
+.burger__item:hover{
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 880px) {
@@ -34,6 +40,7 @@
   .burger__items_visible{
     display: block;
     opacity: 1;
+    visibility: visible;
   }
 
 }

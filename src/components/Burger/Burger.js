@@ -21,7 +21,7 @@ function Burger() {
 
   return (
     <nav className="burger">
-        <button className="hamburger hamburger--vortex" type="button" onClick={handleMenuClick}>
+        <button className={`hamburger hamburger--vortex ${menuIsOpen?'is-active':'' }`} type="button" onClick={handleMenuClick}>
           <span className="hamburger-box">
             <span className="hamburger-inner"></span>
           </span>
