@@ -35,7 +35,8 @@
 
 .project__tech{
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   max-width: 66%;
   margin: 0 auto;
 
@@ -43,6 +44,7 @@
 
 .project__icon{
   max-width: 32px;
+  margin-right: 4px;
 }
 
 .project__links{

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import profileLogo from '../../images/dj-logo.png';
+import Burger from '../Burger/Burger';
 
 function Header() {
   return (
@@ -11,7 +12,6 @@ function Header() {
           {[
             ['About', '#about'],
             ['Projects', '#projects'],
-            // ['Experience', '#experience'],
             ['Contact', '#contact'],
           ].map(([title, url]) => (
             <li key={title}>
@@ -22,6 +22,7 @@ function Header() {
           ))}
         </ul>
       </nav>
+      <Burger/>
     </header>
   );
 }
