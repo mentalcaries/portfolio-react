@@ -15,6 +15,13 @@ import elise from '../images/elise.png';
 import email from '../images/email.png';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
+import htmlicon from '../images/html96.png';
+import cssicon from '../images/css96.png';
+import nodeicon from '../images/node96.png';
+import reacticon from '../images/react96.png';
+import mongoicon from '../images/mongo96.png';
+import gcloudicon from '../images/gcloud96.png';
+import herokuicon from '../images/heroku96.png';
 
 const iconArray = [
   {name: 'Javascript', icon: javascript},
@@ -36,7 +43,7 @@ const projectCards = [
     image: newsxp,
     title: 'News Explorer',
     desc: `A single page application that allows users to search for news articles by keyword. It also features user registration and login.`,
-    tech: 'React | Node | MongoDB | Google Cloud',
+    tech: [reacticon, nodeicon, mongoicon, gcloudicon],
     frontend: 'https://github.com/mentalcaries/news-explorer-frontend',
     backend: 'https://github.com/mentalcaries/news-explorer-backend',
   },
@@ -47,7 +54,7 @@ const projectCards = [
     title: 'Around the US',
     desc: `A full stack photo gallery app that allows users add, delete or like
   photos, with user registration and login`,
-    tech: 'React | Node | MongoDB | Google Cloud',
+  tech: [reacticon, nodeicon, mongoicon, gcloudicon],
     frontend:
       'https://github.com/mentalcaries/react-around-api-full/tree/main/frontend',
     backend:
@@ -59,7 +66,7 @@ const projectCards = [
     image: dotcot,
     title: 'DotCot',
     desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
-    tech: 'React | Node | MongoDB | Heroku',
+    tech: [reacticon, nodeicon, mongoicon, herokuicon],
   },
   {
     key: 103,
@@ -67,7 +74,7 @@ const projectCards = [
     image: elise,
     title: 'Portfolio Page - Elise',
     desc: `This project presents a clean and modern landing page coded in pure HTML and CSS, and features responsive behaviour down to mobile sizes.`,
-    tech: 'HTML | CSS',
+    tech: [htmlicon, cssicon],
     frontend: 'https://github.com/mentalcaries/code-jam-july-landing',
   },
 ];

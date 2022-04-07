@@ -34,8 +34,15 @@
 }
 
 .project__tech{
-  text-align: center;
-  margin: 16px 0px
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 66%;
+  margin: 0 auto;
+
+}
+
+.project__icon{
+  max-width: 32px;
 }
 
 .project__links{

@@ -15,7 +15,7 @@ function About() {
           ].map((paragraph) => (
             <p className="about__paragraph" key={Math.random()}>{paragraph}</p>
           ))}
-        <button className="about__button">Let's Connect</button>
+        <a className="about__button" href='#contact'>Let's Connect</a>
         </div>
         <img
           className="about__image"

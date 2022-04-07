@@ -46,6 +46,15 @@
 }
 
 @media screen and (max-width: 720px){
+
+  .skills{
+    padding: 20px;
+  }
+
+  .skills__icons{
+    width: auto;
+    padding: 24px 0;
+  }
   .skills__icon{
     min-height: 72px;
     width: 72px;
