@@ -1,0 +1,21 @@
+.footer{
+  background-color: #0F1626;
+  min-height: 48px;
+}
+
+.footer__content{
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
+
+.footer__text{
+  color: #DCE1E3 ;
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 540px) {
+  .footer__text{
+    padding: 10px 20px;
+  }
+}

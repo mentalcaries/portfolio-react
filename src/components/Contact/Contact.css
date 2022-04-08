@@ -21,6 +21,10 @@
   font-size: 28px;
 }
 
+.contact__text{
+  text-align: center;
+}
+
 .contact__icons{
   list-style: none;
   display: flex;
