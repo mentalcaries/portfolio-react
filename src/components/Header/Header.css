@@ -37,3 +37,12 @@
   }
   
 }
+@media screen and (max-width: 540px) {
+  .header{
+    padding: 0 16px;
+  }
+  .header__logo{
+    max-width: 240px;
+  }
+  
+}
