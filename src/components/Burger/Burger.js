@@ -4,17 +4,17 @@ import {motion, AnimatePresence} from 'framer-motion';
 function Burger() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  function handleMenuClick() {
+  function toggleMenu() {
     setMenuIsOpen(!menuIsOpen);
   }
 
+
   function handleOutsideClick(evt) {
-    if (evt.target.classlist === 'burger') {
-      console.log('hey');
+    if (menuIsOpen && evt.target.className === 'overlay') {
+      toggleMenu()
     }
   }
 
-  document.addEventListener('click', handleOutsideClick);
 
   return (
     <motion.nav
@@ -28,7 +28,7 @@ function Burger() {
           menuIsOpen ? 'is-active' : ''
         }`}
         type="button"
-        onClick={handleMenuClick}
+        onClick={toggleMenu}
       >
         <span className="hamburger-box">
           <span className="hamburger-inner"></span>
@@ -37,6 +37,7 @@ function Burger() {
 
       <AnimatePresence>
         {menuIsOpen && (
+        <div className="overlay" onClick={handleOutsideClick}>
           <motion.ul
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -51,14 +52,16 @@ function Burger() {
               ['Projects', '#projects'],
               ['Contact', '#contact'],
             ].map(([title, url]) => (
-              <li className="burger__item" key={title} onClick={handleMenuClick}>
+              <li className="burger__item" key={title} onClick={toggleMenu}>
                 <a href={url}>{title}</a>
               </li>
             ))}
           </motion.ul>
+          </div>
         )}
       </AnimatePresence>
     </motion.nav>
+
   );
 }
 
