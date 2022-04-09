@@ -23,6 +23,12 @@ import mongoicon from '../images/mongo96.png';
 import gcloudicon from '../images/gcloud96.png';
 import herokuicon from '../images/heroku96.png';
 
+const aboutMe = [
+  "Hi, I'm Devin, a Full Stack Developer who's thrilled by the endless possibilities that come with code!",
+  "Despite my initial apprehension, my knack for problem solving led me to dip my toes in programming, and I've had no regrets since. I can safely say this journey had been equally fun and challenging, and has pushed me to keep learning as much as I can",
+  'I come from a background in healthcare where the small stuff matters; attention to detail is always key, whether it comes to clinical practice or writing code.',
+]
+
 const iconArray = [
   {name: 'Javascript', icon: javascript},
   {name: 'React', icon: react},
@@ -72,8 +78,8 @@ const projectCards = [
     key: 103,
     url: 'https://mentalcaries.github.io/code-jam-july-landing/index.html',
     image: elise,
-    title: 'Portfolio Page - Elise',
-    desc: `This project presents a clean and modern landing page coded in pure HTML and CSS, and features responsive behaviour down to mobile sizes.`,
+    title: 'Elise Bouer - Portfolio',
+    desc: `This Portfolio presents a clean, modern and responsive landing page coded in pure HTML and CSS. Submitted for Practicum's July 2021 Code Jam for team overReact !`,
     tech: [htmlicon, cssicon],
     frontend: 'https://github.com/mentalcaries/code-jam-july-landing',
   },
@@ -97,4 +103,4 @@ const contacts = [
   },
 ];
 
-export {iconArray, projectCards, contacts};
+export {aboutMe, iconArray, projectCards, contacts};
