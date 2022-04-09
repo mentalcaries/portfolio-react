@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
@@ -7,8 +7,22 @@ import Main from '../Main/Main';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
+import ToTop from '../ToTop/ToTop';
 
 function App() {
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
   return (
     <div className="app">
       <Header />
@@ -16,8 +30,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Contact/>
+      <Contact />
       <Footer />
+      {showButton && <ToTop /> }
     </div>
   );
 }

@@ -3,10 +3,11 @@ import './Header.css';
 import profileLogo from '../../images/dj-logo.png';
 import Burger from '../Burger/Burger';
 import {motion} from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <motion.img
         src={profileLogo}
         alt="DJ Profile"
@@ -32,9 +33,9 @@ function Header() {
               whileHover={{opacity: 0.7, scale: 1.05}}
               whileTap={{scale: 0.9}}
             >
-              <a href={url} className="header__item">
+              <AnchorLink href={url} className="header__item">
                 {title}
-              </a>
+              </AnchorLink>
             </motion.li>
           ))}
         </ul>

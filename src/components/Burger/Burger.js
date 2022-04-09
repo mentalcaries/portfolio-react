@@ -1,6 +1,9 @@
 import {useState} from 'react';
 import './Burger.css';
 import {motion, AnimatePresence} from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+
 function Burger() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -56,7 +59,7 @@ function Burger() {
                 ['Contact', '#contact'],
               ].map(([title, url]) => (
                 <li className="burger__item" key={title} onClick={toggleMenu}>
-                  <a href={url}>{title}</a>
+                  <AnchorLink href={url}>{title}</AnchorLink>
                 </li>
               ))}
             </motion.ul>
