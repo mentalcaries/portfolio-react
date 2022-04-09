@@ -1,6 +1,7 @@
 .projects {
   max-width: 880px;
-  margin: 48px auto;
+  margin: 24px auto;
+  padding-top: 80px;
 }
 
 .projects__content {

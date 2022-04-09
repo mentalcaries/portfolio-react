@@ -1,5 +1,6 @@
 import {contacts} from '../../utils/constants';
 import './Contact.css';
+import { motion } from 'framer-motion';
 
 function Contact() {
   return (
@@ -9,8 +10,13 @@ function Contact() {
         <p className="contact__text">Feel free to drop me a line on any of the regular channels</p>
         <ul className="contact__icons">
           {contacts.map((contact) => (
-            <li className="contact__icon" key={contact.url}>
-              <a
+            <motion.li className="contact__icon" key={contact.url} 
+            initial={{z: 200, opacity:0, scale:0.5}}
+            whileInView={{z:0, opacity: 0.9, scale: 1}}
+            transition={{duration:0.5}}
+            whileHover={{scale:1.1, opacity:1.5, transition:{duration: 0.3}}}
+            >
+              <a 
                 href={contact.url}
                 className="contact__link"
                 target="_blank"
@@ -18,7 +24,7 @@ function Contact() {
               >
                 <img src={contact.icon} alt={contact.name} />
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

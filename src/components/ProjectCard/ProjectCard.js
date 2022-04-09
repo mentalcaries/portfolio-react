@@ -1,20 +1,18 @@
 import React from 'react';
 import './ProjectCard.css';
+import {motion} from 'framer-motion';
 
 function ProjectCard({card}) {
   const {url, image, title, desc, frontend, backend, tech} = card;
 
   return (
-    // Project image
-    // Overlay
-    // Text
-    // Links to code and deployment
-    <article className="project-card">
+    <motion.article
+      className="project-card"
+      initial={{x: -200, opacity: 0}}
+      whileInView={{x: 0, opacity: 1}}
+      transition={{duration: 0.5}}
+    >
       <a href={url} target="_blank" rel="noreferrer">
-        {/* <div
-          className="
-        "
-        > */}
         <img src={image} alt="Project Card" className="project__image" />
       </a>
       <h3 className="project__title">{title}</h3>
@@ -54,7 +52,7 @@ function ProjectCard({card}) {
           );
         })}
       </div>
-    </article>
+    </motion.article>
   );
 }
 
