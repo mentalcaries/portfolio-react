@@ -8,13 +8,11 @@ function Burger() {
     setMenuIsOpen(!menuIsOpen);
   }
 
-
   function handleOutsideClick(evt) {
     if (menuIsOpen && evt.target.className === 'overlay') {
-      toggleMenu()
+      toggleMenu();
     }
   }
-
 
   return (
     <motion.nav
@@ -37,31 +35,35 @@ function Burger() {
 
       <AnimatePresence>
         {menuIsOpen && (
-        <div className="overlay" onClick={handleOutsideClick}>
-          <motion.ul
+          <motion.div
+            className="overlay"
+            onClick={handleOutsideClick}
             initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{duration: 0.05}}
-            exit={{opacity: 0}}
-            className={`burger__items ${
-              menuIsOpen ? 'burger__items_visible' : ''
-            }`}
+            exit={{opacity: 0, transition: {duration: 0.3}}}
           >
-            {[
-              ['About', '#about'],
-              ['Projects', '#projects'],
-              ['Contact', '#contact'],
-            ].map(([title, url]) => (
-              <li className="burger__item" key={title} onClick={toggleMenu}>
-                <a href={url}>{title}</a>
-              </li>
-            ))}
-          </motion.ul>
-          </div>
+            <motion.ul
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 0.05}}
+              exit={{opacity: 0, transition: {duration: 0.3}}}
+              className={`burger__items 
+            }`}
+            >
+              {[
+                ['About', '#about'],
+                ['Projects', '#projects'],
+                ['Contact', '#contact'],
+              ].map(([title, url]) => (
+                <li className="burger__item" key={title} onClick={toggleMenu}>
+                  <a href={url}>{title}</a>
+                </li>
+              ))}
+            </motion.ul>
+          </motion.div>
         )}
       </AnimatePresence>
     </motion.nav>
-
   );
 }
 
