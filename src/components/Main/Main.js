@@ -11,10 +11,12 @@ function Main() {
     >
       <div className="main__content">
         <h1 className="main__title">Devin Jaggernauth</h1>
-        <p className="main__subtitle">Full Stack Web Developer</p>
+        <p className="main__subtitle">Full Stack Engineer</p>
         <p className="main__subtitle">DDS</p>
       </div>
+      {/* Photo by <a href="https://unsplash.com/@lishakov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrej Lišakov</a> */}
     </motion.section>
+    
   );
 }
 
