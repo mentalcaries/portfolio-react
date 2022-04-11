@@ -55,7 +55,7 @@ const projectCards = [
   },
   {
     key: 101,
-    url: 'https://mentalcaries.students.nomoreparties.site',
+    url: 'https://devaround.students.nomoreparties.sbs',
     image: around,
     title: 'Around the US',
     desc: `A full stack photo gallery app that allows users add, delete or like
