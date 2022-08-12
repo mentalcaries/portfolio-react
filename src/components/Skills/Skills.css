@@ -22,7 +22,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
   max-width: 620px;
 }
 
@@ -39,33 +39,31 @@
 }
 
 .skills__icon-image {
-  max-height: 56px;
-  max-width: 56px;
+  max-height: 50px;
+  max-width: 50px;
   height: 100%;
   width: auto;
-
 }
 
-@media screen and (max-width: 720px){
-
-  .skills{
+@media screen and (max-width: 720px) {
+  .skills {
     padding: 20px;
   }
 
-  .skills__icons{
+  .skills__icons {
     width: auto;
     padding: 24px 0;
     gap: 24px;
     max-width: 540px;
-
   }
-  .skills__icon{
+  .skills__icon {
     min-height: 64px;
     width: 64px;
   }
 
-  .skills__icon-image{
-    padding: 8px
+  .skills__icon-image {
+    max-height: 40px;
+    max-width: 40px;
+    padding: 8px;
   }
 }
-

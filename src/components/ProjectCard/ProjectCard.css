@@ -14,6 +14,8 @@
   margin: 0 auto;
   transition: transform linear 0.25s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .project__image:hover {
@@ -44,6 +46,7 @@
 .project__icon {
   max-width: 32px;
   margin-right: 4px;
+  object-fit: contain;
 }
 
 .project__links {

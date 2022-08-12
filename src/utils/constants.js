@@ -22,6 +22,10 @@ import reacticon from '../images/react96.png';
 import mongoicon from '../images/mongo96.png';
 import gcloudicon from '../images/gcloud96.png';
 import herokuicon from '../images/heroku96.png';
+import wtwr from '../images/wtwr.png';
+import warehouse from '../images/warehouse.png';
+import typescript from '../images/ts.png';
+import python from '../images/python.png';
 
 const aboutMe = [
   "Hi, I'm Devin, a Full Stack Engineer who's thrilled by the endless possibilities that come with code!",
@@ -30,12 +34,14 @@ const aboutMe = [
 ];
 
 const iconArray = [
-  { name: 'Javascript', icon: javascript },
+  { name: 'JavaScript', icon: javascript },
   { name: 'React', icon: react },
+  { name: 'TypeScript', icon: typescript },
   { name: 'Node', icon: node },
   { name: 'Express', icon: express },
   { name: 'MongoDB', icon: mongo },
   { name: 'SQL', icon: sql },
+  { name: 'Python', icon: python },
   { name: 'Git', icon: git },
   { name: 'HTML', icon: html },
   { name: 'CSS', icon: css },
@@ -52,11 +58,29 @@ const projectCards = [
     tech: [reacticon, nodeicon, mongoicon, herokuicon],
   },
   {
+    key: 104,
+    url: 'https://wtwr.students.nomoredomainssbs.ru/',
+    image: wtwr,
+    title: 'WTWR',
+    desc: `WTWR recommends clothing options for the user based on the weather and items available in the wardrobe`,
+    tech: [reacticon, nodeicon, mongoicon, gcloudicon],
+  },
+  {
+    key: 105,
+    url: 'https://subtle-zabaione-721bc9.netlify.app',
+    image: warehouse,
+    title: 'Warehouse Manager',
+    desc: `Warehouse Inventory Management: allows to look up product stats by name or SKU, and to adjust quantities at specific locations`,
+    tech: [typescript, reacticon, nodeicon, sql],
+    frontend: 'https://github.com/mentalcaries/warehouse-inventory-ts',
+    backend: 'https://github.com/mentalcaries/jls-inventory-backend',
+  },
+  {
     key: 100,
     url: 'https://newsxp.students.nomoreparties.sbs/',
     image: newsxp,
     title: 'News Explorer',
-    desc: `A single page application that allows users to search for news articles by keyword. It also features user registration and login.`,
+    desc: `A single page application that allows users to search for news articles by keyword and save to an account for later reading.`,
     tech: [reacticon, nodeicon, mongoicon, gcloudicon],
     frontend: 'https://github.com/mentalcaries/news-explorer-frontend',
     backend: 'https://github.com/mentalcaries/news-explorer-backend',
