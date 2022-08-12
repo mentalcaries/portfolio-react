@@ -62,7 +62,7 @@ const projectCards = [
     url: 'https://wtwr.students.nomoredomainssbs.ru/',
     image: wtwr,
     title: 'WTWR',
-    desc: `WTWR recommends clothing options for the user based on the weather and items available in the wardrobe`,
+    desc: `WTWR recommends clothing options for the user based on the current weather and items available in the user's wardrobe.`,
     tech: [reacticon, nodeicon, mongoicon, gcloudicon],
   },
   {
