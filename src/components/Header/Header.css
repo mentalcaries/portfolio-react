@@ -17,13 +17,17 @@
   display: flex;
   justify-content: space-around;
   max-width: 512px;
+  list-style: none;
 }
+
 
 .header__item {
   font-family: Quicksand, Georgia, 'Times New Roman', Times, serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-left: 20px;
+  text-decoration: none;
+  color: inherit;
 }
 
 

@@ -19,20 +19,20 @@ function ProjectCard({card}) {
       <ul className="project__links">
         {frontend && (
           <li>
-            <a href={frontend} target="_blank" rel="noreferrer">
+            <a href={frontend} className="project__link" target="_blank" rel="noreferrer">
               Frontend
             </a>
           </li>
         )}
         {backend && (
           <li>
-            <a href={backend} target="_blank" rel="noreferrer">
+            <a href={backend} className="project__link" target="_blank" rel="noreferrer">
               Backend
             </a>
           </li>
         )}
         <li>
-          <a href={url} target="_blank" rel="noreferrer">
+          <a href={url} className="project__link" target="_blank" rel="noreferrer">
             Deployment
           </a>
         </li>

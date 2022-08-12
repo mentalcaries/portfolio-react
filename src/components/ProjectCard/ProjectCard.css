@@ -54,4 +54,11 @@
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-decoration: underline;
+  list-style: none;
+  padding: 0;
+}
+
+.project__link{
+  text-decoration: none;
+  color: inherit;
 }

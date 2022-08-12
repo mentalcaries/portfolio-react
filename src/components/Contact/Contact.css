@@ -33,8 +33,12 @@
   margin: 32px auto;
 }
 
-.contact__icon{
+.contact__element{
   max-width: 64px;
+}
+
+.contact__icon{
+  width: 100%;
 }
 
 @media screen and (max-width: 500px){

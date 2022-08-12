@@ -10,7 +10,7 @@ function Contact() {
         <p className="contact__text">Feel free to drop me a line on any of the regular channels</p>
         <ul className="contact__icons">
           {contacts.map((contact) => (
-            <motion.li className="contact__icon" key={contact.url} 
+            <motion.li className="contact__element" key={contact.url} 
             initial={{z: 200, opacity:0, scale:0.5}}
             whileInView={{z:0, opacity: 0.9, scale: 1}}
             transition={{duration:0.5}}
@@ -22,7 +22,7 @@ function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={contact.icon} alt={contact.name} />
+                <img className='contact__icon' src={contact.icon} alt={contact.name} />
               </a>
             </motion.li>
           ))}

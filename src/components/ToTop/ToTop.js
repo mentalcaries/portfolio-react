@@ -7,6 +7,7 @@ function ToTop() {
   return (
     <AnchorLink className="top-button" href="#header">
       <motion.img
+        className='top-button__image'
         src={arrow}
         alt="Up arrow"
         initial={{opacity: 0.3}}
