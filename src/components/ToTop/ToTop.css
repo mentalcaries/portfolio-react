@@ -1,11 +1,10 @@
-.top-button{
+.top-button {
   position: fixed;
   right: 48px;
   bottom: 60px;
   max-width: 36px;
-  
 }
 
-.top-button__image{
+.top-button__image {
   width: 100%;
 }

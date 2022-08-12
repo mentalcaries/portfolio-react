@@ -1,16 +1,16 @@
 import React from 'react';
 import './ProjectCard.css';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
-function ProjectCard({card}) {
-  const {url, image, title, desc, frontend, backend, tech} = card;
+function ProjectCard({ card }) {
+  const { url, image, title, desc, frontend, backend, tech } = card;
 
   return (
     <motion.article
       className="project-card"
-      initial={{x: -200, opacity: 0}}
-      whileInView={{x: 0, opacity: 1}}
-      transition={{duration: 0.5}}
+      initial={{ x: -200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <a href={url} target="_blank" rel="noreferrer">
         <img src={image} alt="Project Card" className="project__image" />
@@ -19,20 +19,35 @@ function ProjectCard({card}) {
       <ul className="project__links">
         {frontend && (
           <li>
-            <a href={frontend} className="project__link" target="_blank" rel="noreferrer">
+            <a
+              href={frontend}
+              className="project__link"
+              target="_blank"
+              rel="noreferrer"
+            >
               Frontend
             </a>
           </li>
         )}
         {backend && (
           <li>
-            <a href={backend} className="project__link" target="_blank" rel="noreferrer">
+            <a
+              href={backend}
+              className="project__link"
+              target="_blank"
+              rel="noreferrer"
+            >
               Backend
             </a>
           </li>
         )}
         <li>
-          <a href={url} className="project__link" target="_blank" rel="noreferrer">
+          <a
+            href={url}
+            className="project__link"
+            target="_blank"
+            rel="noreferrer"
+          >
             Deployment
           </a>
         </li>

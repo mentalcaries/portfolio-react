@@ -1,4 +1,4 @@
-.project-card{
+.project-card {
   border-radius: 10px;
   padding: 20px;
   max-width: 320px;
@@ -6,21 +6,21 @@
   margin: 0 auto;
 }
 
-.project__image{
+.project__image {
   max-height: 240px;
-  width:auto;
+  width: auto;
   border-radius: 12px;
   object-fit: contain;
   margin: 0 auto;
-  transition:  transform linear 0.25s;
+  transition: transform linear 0.25s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.project__image:hover{
+.project__image:hover {
   transform: scale(1.02);
 }
 
-.project__title{
+.project__title {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -28,26 +28,25 @@
   text-align: center;
 }
 
-.project__desc{
+.project__desc {
   margin: 24px auto;
   font-size: 16px;
 }
 
-.project__tech{
+.project__tech {
   display: flex;
   /* justify-content: space-evenly; */
   justify-content: center;
   max-width: 66%;
   margin: 0 auto;
-
 }
 
-.project__icon{
+.project__icon {
   max-width: 32px;
   margin-right: 4px;
 }
 
-.project__links{
+.project__links {
   display: flex;
   justify-content: space-around;
   margin-bottom: 8px;
@@ -58,7 +57,7 @@
   padding: 0;
 }
 
-.project__link{
+.project__link {
   text-decoration: none;
   color: inherit;
 }

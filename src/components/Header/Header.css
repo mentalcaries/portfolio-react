@@ -12,14 +12,12 @@
   padding-right: 24px;
 }
 
-
 .header__items {
   display: flex;
   justify-content: space-around;
   max-width: 512px;
   list-style: none;
 }
-
 
 .header__item {
   font-family: Quicksand, Georgia, 'Times New Roman', Times, serif;
@@ -30,19 +28,16 @@
   color: inherit;
 }
 
-
 @media screen and (max-width: 880px) {
-  .header__nav{
+  .header__nav {
     display: none;
   }
-  
 }
 @media screen and (max-width: 540px) {
-  .header{
+  .header {
     padding: 0 16px;
   }
-  .header__logo{
+  .header__logo {
     max-width: 240px;
   }
-  
 }
