@@ -27,22 +27,30 @@ const aboutMe = [
   "Hi, I'm Devin, a Full Stack Engineer who's thrilled by the endless possibilities that come with code!",
   "Despite my initial apprehension, my knack for problem solving led me to dip my toes in programming, and I've had no regrets since. I can safely say this journey had been equally fun and challenging, and has pushed me to keep learning as much as I can",
   'I come from a background in healthcare where the small stuff matters; attention to detail is always key, whether it comes to clinical practice or writing code.',
-]
+];
 
 const iconArray = [
-  {name: 'Javascript', icon: javascript},
-  {name: 'React', icon: react},
-  {name: 'Node', icon: node},
-  {name: 'Express', icon: express},
-  {name: 'MongoDB', icon: mongo},
-  {name: 'SQL', icon: sql},
-  {name: 'Git', icon: git},
-  {name: 'HTML', icon: html},
-  {name: 'CSS', icon: css},
-  {name: 'Figma', icon: figma},
+  { name: 'Javascript', icon: javascript },
+  { name: 'React', icon: react },
+  { name: 'Node', icon: node },
+  { name: 'Express', icon: express },
+  { name: 'MongoDB', icon: mongo },
+  { name: 'SQL', icon: sql },
+  { name: 'Git', icon: git },
+  { name: 'HTML', icon: html },
+  { name: 'CSS', icon: css },
+  { name: 'Figma', icon: figma },
 ];
 
 const projectCards = [
+  {
+    key: 102,
+    url: 'https://peaceful-woodland-39661.herokuapp.com/',
+    image: dotcot,
+    title: 'DotCot',
+    desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
+    tech: [reacticon, nodeicon, mongoicon, herokuicon],
+  },
   {
     key: 100,
     url: 'https://newsxp.students.nomoreparties.sbs/',
@@ -60,20 +68,13 @@ const projectCards = [
     title: 'Around the US',
     desc: `A full stack photo gallery app that allows users add, delete or like
   photos, with user registration and login`,
-  tech: [reacticon, nodeicon, mongoicon, gcloudicon],
+    tech: [reacticon, nodeicon, mongoicon, gcloudicon],
     frontend:
       'https://github.com/mentalcaries/react-around-api-full/tree/main/frontend',
     backend:
       'https://github.com/mentalcaries/react-around-api-full/tree/main/backend',
   },
-  {
-    key: 102,
-    url: 'https://peaceful-woodland-39661.herokuapp.com/',
-    image: dotcot,
-    title: 'DotCot',
-    desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
-    tech: [reacticon, nodeicon, mongoicon, herokuicon],
-  },
+
   {
     key: 103,
     url: 'https://mentalcaries.github.io/code-jam-july-landing/index.html',
@@ -103,4 +104,4 @@ const contacts = [
   },
 ];
 
-export {aboutMe, iconArray, projectCards, contacts};
+export { aboutMe, iconArray, projectCards, contacts };
