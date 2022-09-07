@@ -29,8 +29,8 @@ import python from '../images/python.png';
 
 const aboutMe = [
   "Hi, I'm Devin, a Full Stack Engineer who's thrilled by the endless possibilities that come with code!",
-  "Despite my initial apprehension, my knack for problem solving led me to dip my toes in programming, and I've had no regrets since. I can safely say this journey had been equally fun and challenging, and has pushed me to keep learning as much as I can",
-  'I come from a background in healthcare where the small stuff matters; attention to detail is always key, whether it comes to clinical practice or writing code.',
+  "Despite my initial apprehension, my knack for problem solving led me to dip my toes in programming, and I've had no regrets since. I can safely say this journey had been equally fun and challenging, and has pushed me to keep learning as much as I can.",
+  'I come from a background in dentistry where the small stuff matters; attention to detail is always key, whether it comes to clinical practice or writing code.',
 ];
 
 const iconArray = [
@@ -70,7 +70,7 @@ const projectCards = [
     url: 'https://subtle-zabaione-721bc9.netlify.app',
     image: warehouse,
     title: 'Warehouse Manager',
-    desc: `Warehouse Inventory Management: allows to look up product stats by name or SKU, and to adjust quantities at specific locations`,
+    desc: `Warehouse Inventory Management for looking up product stats by name or SKU, and adjusting quantities at specific locations.`,
     tech: [typescript, reacticon, nodeicon, sql],
     frontend: 'https://github.com/mentalcaries/warehouse-inventory-ts',
     backend: 'https://github.com/mentalcaries/jls-inventory-backend',
@@ -91,7 +91,7 @@ const projectCards = [
     image: around,
     title: 'Around the US',
     desc: `A full stack photo gallery app that allows users add, delete or like
-  photos, with user registration and login`,
+  photos, with user registration and login.`,
     tech: [reacticon, nodeicon, mongoicon, gcloudicon],
     frontend:
       'https://github.com/mentalcaries/react-around-api-full/tree/main/frontend',
@@ -104,7 +104,7 @@ const projectCards = [
     url: 'https://mentalcaries.github.io/code-jam-july-landing/index.html',
     image: elise,
     title: 'Elise Bouer - Portfolio',
-    desc: `This Portfolio presents a clean, modern and responsive landing page coded in pure HTML and CSS. Submitted for Practicum's July 2021 Code Jam for team overReact !`,
+    desc: `This Portfolio presents a clean, modern and responsive landing page coded ONLY in pure HTML and CSS. Submitted for Practicum's July 2021 Code Jam for team overReact!`,
     tech: [htmlicon, cssicon],
     frontend: 'https://github.com/mentalcaries/code-jam-july-landing',
   },
