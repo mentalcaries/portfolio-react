@@ -26,6 +26,11 @@ import wtwr from '../images/wtwr.png';
 import warehouse from '../images/warehouse.png';
 import typescript from '../images/ts.png';
 import python from '../images/python.png';
+import railway from '../images/railway.png';
+import nextjs from '../images/nextjs.png';
+import framer from '../images/framer.png';
+import vercel from '../images/vercel.png';
+import plantboutique from '../images/pb.png';
 
 const aboutMe = [
   "Hi, I'm Devin, a Full Stack Engineer who's thrilled by the endless possibilities that come with code!",
@@ -49,21 +54,32 @@ const iconArray = [
 ];
 
 const projectCards = [
+  // {
+  //   key: 102,
+  //   url: 'https://peaceful-woodland-39661.herokuapp.com/',
+  //   image: dotcot,
+  //   title: 'DotCot',
+  //   desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
+  //   tech: [reacticon, nodeicon, mongoicon, herokuicon],
+  // },
+
   {
-    key: 102,
-    url: 'https://peaceful-woodland-39661.herokuapp.com/',
-    image: dotcot,
-    title: 'DotCot',
-    desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
-    tech: [reacticon, nodeicon, mongoicon, herokuicon],
+    key: 106,
+    url: 'https://plantboutiquett.com',
+    image: plantboutique,
+    title: 'The Plant Boutique',
+    desc: `An elegant and modern home page for The Plant Boutique, a small business specialised in plant accessories`,
+    tech: [typescript, nextjs, framer, vercel],
+    repository: 'https://github.com/mentalcaries/plant-boutique-next',
   },
   {
     key: 104,
-    url: 'https://wtwr.students.nomoredomainssbs.ru/',
+    url: 'https://wtwr-app.up.railway.app/',
     image: wtwr,
     title: 'WTWR',
     desc: `WTWR recommends clothing options for the user based on the current weather and items available in the user's wardrobe.`,
-    tech: [reacticon, nodeicon, mongoicon, gcloudicon],
+    tech: [reacticon, nodeicon, mongoicon, railway],
+    repository: 'https://github.com/mentalcaries/wtwr-app',
   },
   {
     key: 105,

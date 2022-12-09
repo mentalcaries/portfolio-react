@@ -3,7 +3,7 @@ import './ProjectCard.css';
 import { motion } from 'framer-motion';
 
 function ProjectCard({ card }) {
-  const { url, image, title, desc, frontend, backend, tech } = card;
+  const { url, image, title, desc, frontend, backend, repository, tech } = card;
 
   return (
     <motion.article
@@ -41,6 +41,18 @@ function ProjectCard({ card }) {
             </a>
           </li>
         )}
+        {repository && (
+          <li>
+            <a
+              href={repository}
+              className="project__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Repo
+            </a>
+          </li>
+        )}
         <li>
           <a
             href={url}
@@ -53,7 +65,6 @@ function ProjectCard({ card }) {
         </li>
       </ul>
       <p className="project__desc">{desc}</p>
-      {/* </div> */}
 
       <div className="project__tech">
         {tech.map((icon) => {
