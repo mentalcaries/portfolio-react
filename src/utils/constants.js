@@ -21,7 +21,6 @@ import nodeicon from '../images/node96.png';
 import reacticon from '../images/react96.png';
 import mongoicon from '../images/mongo96.png';
 import gcloudicon from '../images/gcloud96.png';
-import herokuicon from '../images/heroku96.png';
 import wtwr from '../images/wtwr.png';
 import warehouse from '../images/warehouse.png';
 import typescript from '../images/ts.png';
@@ -54,14 +53,14 @@ const iconArray = [
 ];
 
 const projectCards = [
-  // {
-  //   key: 102,
-  //   url: 'https://peaceful-woodland-39661.herokuapp.com/',
-  //   image: dotcot,
-  //   title: 'DotCot',
-  //   desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
-  //   tech: [reacticon, nodeicon, mongoicon, herokuicon],
-  // },
+  {
+    key: 102,
+    url: 'https://dotcot.onrender.com/welcome',
+    image: dotcot,
+    title: 'DotCot',
+    desc: `DotCot is a platform designed to match startups with potential investors. Investors can share a link with founders who can then create their pitch.`,
+    tech: [reacticon, nodeicon, mongoicon],
+  },
 
   {
     key: 106,
