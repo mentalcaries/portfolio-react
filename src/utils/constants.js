@@ -92,7 +92,7 @@ const projectCards = [
   },
   {
     key: 100,
-    url: 'https://newsxp.students.nomoreparties.sbs/',
+    url: 'https://newsxpdev.students.nomoredomainssbs.ru/',
     image: newsxp,
     title: 'News Explorer',
     desc: `A single page application that allows users to search for news articles by keyword and save to an account for later reading.`,
