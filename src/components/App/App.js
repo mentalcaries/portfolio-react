@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Projects from '../Projects/Projects';
-import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import ToTop from '../ToTop/ToTop';
 
