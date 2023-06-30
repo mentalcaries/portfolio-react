@@ -30,6 +30,13 @@ import nextjs from '../images/nextjs.png';
 import framer from '../images/framer.png';
 import vercel from '../images/vercel.png';
 import plantboutique from '../images/pb.png';
+import tailwind from '../images/tailwind.svg'
+import svelte from '../images/svelte.svg'
+import flexFactor from '../images/flexfactor.png'
+import essentialDental from '../images/eds.png'
+import astro from '../images/astro.svg'
+import hygraph from '../images/hygraph.svg'
+import netlify from '../images/netlify.svg'
 
 const aboutMe = [
   "Hi, I'm Devin, a Full Stack Engineer who's thrilled by the endless possibilities that come with code!",
@@ -54,6 +61,23 @@ const iconArray = [
 
 const projectCards = [
   {
+    key: 100,
+    url: 'https://flex-factor-v2.vercel.app/',
+    image: flexFactor,
+    title: 'FlexFactor',
+    desc: `The ultimate bulking calculator app! Our muscle growth forecasting feature helps you track progress and smash goals like a pro. Get ready to flex with confidence and take your gains game to the next level!`,
+    tech: [svelte, tailwind, vercel],
+    frontend: 'https://github.com/thinklikeadesigner/FlexFactor-V2'
+  },
+  {
+    key: 101,
+    url: 'https://southtrinidaddentist.com/',
+    image: essentialDental,
+    title: 'Essential Dental Solutions',
+    desc: `A clean, modern content-focused landing page for Essential Dental Solutions, private practice focused on personalised patient care. Features integration with Hygraph for content management. `,
+    tech: [astro, tailwind, hygraph, netlify],
+  },
+  {
     key: 102,
     url: 'https://dotcot.onrender.com/welcome',
     image: dotcot,
@@ -71,15 +95,15 @@ const projectCards = [
     tech: [typescript, nextjs, framer, vercel],
     repository: 'https://github.com/mentalcaries/plant-boutique-next',
   },
-  {
-    key: 104,
-    url: 'https://wtwr-app.up.railway.app/',
-    image: wtwr,
-    title: 'WTWR',
-    desc: `WTWR recommends clothing options for the user based on the current weather and items available in the user's wardrobe.`,
-    tech: [reacticon, nodeicon, mongoicon, railway],
-    repository: 'https://github.com/mentalcaries/wtwr-app',
-  },
+  // {
+  //   key: 104,
+  //   url: 'https://wtwr-app.up.railway.app/',
+  //   image: wtwr,
+  //   title: 'WTWR',
+  //   desc: `WTWR recommends clothing options for the user based on the current weather and items available in the user's wardrobe.`,
+  //   tech: [reacticon, nodeicon, mongoicon, railway],
+  //   repository: 'https://github.com/mentalcaries/wtwr-app',
+  // },
   {
     key: 105,
     url: 'https://subtle-zabaione-721bc9.netlify.app',
@@ -92,7 +116,7 @@ const projectCards = [
   },
   {
     key: 100,
-    url: 'https://newsxpdev.students.nomoredomainssbs.ru/',
+    // url: 'https://newsxpdev.students.nomoredomainssbs.ru/',
     image: newsxp,
     title: 'News Explorer',
     desc: `A single page application that allows users to search for news articles by keyword and save to an account for later reading.`,
@@ -102,7 +126,7 @@ const projectCards = [
   },
   {
     key: 101,
-    url: 'https://devaround.students.nomoreparties.sbs',
+    // url: 'https://devaround.students.nomoreparties.sbs',
     image: around,
     title: 'Around the US',
     desc: `A full stack photo gallery app that allows users add, delete or like

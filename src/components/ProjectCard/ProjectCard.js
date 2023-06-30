@@ -53,16 +53,18 @@ function ProjectCard({ card }) {
             </a>
           </li>
         )}
-        <li>
-          <a
-            href={url}
-            className="project__link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Deployment
-          </a>
-        </li>
+        {url && (
+          <li>
+            <a
+              href={url}
+              className="project__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Deployment
+            </a>
+          </li>
+        )}
       </ul>
       <p className="project__desc">{desc}</p>
 
