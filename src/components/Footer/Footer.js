@@ -3,12 +3,12 @@ import './Footer.css'
 
 function Footer(){
 
-  // get current year
+  const currentYear = new Date().getFullYear()
   return(
 <footer className="footer">
 <div className="footer__content">
   <p className="footer__text">
-            &copy; 2022 Devin Jaggernauth
+            &copy; {currentYear} Devin Jaggernauth
           </p>
 </div>
 </footer>
