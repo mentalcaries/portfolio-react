@@ -37,6 +37,7 @@ import essentialDental from '../images/eds.png'
 import astro from '../images/astro.svg'
 import hygraph from '../images/hygraph.svg'
 import netlify from '../images/netlify.svg'
+import connectient from '../images/connectient.png'
 
 const aboutMe = [
   "Hi, I'm Devin, a Full Stack Engineer who's thrilled by the endless possibilities that come with code!",
@@ -60,6 +61,14 @@ const iconArray = [
 ];
 
 const projectCards = [
+  {
+    key: 1002,
+    url: 'https://connectient.co',
+    image: connectient,
+    title: 'Connectient',
+    desc: `Simplifying the process appointment requests for patients and management and scheduling for your front desk staff. Connectient presents an intuitive interface and works for traditional and paperless practices alike `,
+    tech: [nextjs, tailwind, vercel],
+  },
   {
     key: 100,
     url: 'https://flex-factor-v2.vercel.app/',
@@ -87,24 +96,6 @@ const projectCards = [
   },
 
   {
-    key: 106,
-    url: 'https://plantboutiquett.com',
-    image: plantboutique,
-    title: 'The Plant Boutique',
-    desc: `An elegant and modern home page for The Plant Boutique, a small business specialised in plant accessories`,
-    tech: [typescript, nextjs, framer, vercel],
-    repository: 'https://github.com/mentalcaries/plant-boutique-next',
-  },
-  // {
-  //   key: 104,
-  //   url: 'https://wtwr-app.up.railway.app/',
-  //   image: wtwr,
-  //   title: 'WTWR',
-  //   desc: `WTWR recommends clothing options for the user based on the current weather and items available in the user's wardrobe.`,
-  //   tech: [reacticon, nodeicon, mongoicon, railway],
-  //   repository: 'https://github.com/mentalcaries/wtwr-app',
-  // },
-  {
     key: 105,
     url: 'https://subtle-zabaione-721bc9.netlify.app',
     image: warehouse,
@@ -113,16 +104,6 @@ const projectCards = [
     tech: [typescript, reacticon, nodeicon, sql],
     frontend: 'https://github.com/mentalcaries/warehouse-inventory-ts',
     backend: 'https://github.com/mentalcaries/jls-inventory-backend',
-  },
-  {
-    key: 100,
-    // url: 'https://newsxpdev.students.nomoredomainssbs.ru/',
-    image: newsxp,
-    title: 'News Explorer',
-    desc: `A single page application that allows users to search for news articles by keyword and save to an account for later reading.`,
-    tech: [reacticon, nodeicon, mongoicon, gcloudicon],
-    frontend: 'https://github.com/mentalcaries/news-explorer-frontend',
-    backend: 'https://github.com/mentalcaries/news-explorer-backend',
   },
   {
     key: 101,
